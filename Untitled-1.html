@@ -1,0 +1,13 @@
+    <div style={{ padding: 20 }}>
+      <h1>⚙️ Web Client - Socket.IO</h1>
+
+      <button
+        onClick={() => socket.emit("message-from-client", "Hello server!")}
+      >
+        Gửi tin cho Server
+      </button>
+
+      <p>
+        💬 Tin từ server: <strong>{serverMsg}</strong>
+      </p>
+    </div>
